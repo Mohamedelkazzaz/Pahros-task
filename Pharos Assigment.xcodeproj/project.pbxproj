@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8BCDF5F28AFBF03009DA408 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCDF5D28AFBF03009DA408 /* CityCell.swift */; };
+		E8BCDF6028AFBF03009DA408 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8BCDF5E28AFBF03009DA408 /* CityCell.xib */; };
+		E8BCDF6328AFC0D6009DA408 /* CityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCDF6228AFC0D6009DA408 /* CityVC.swift */; };
+		E8BCDF6528AFC226009DA408 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCDF6428AFC226009DA408 /* CityViewModel.swift */; };
 		E8CAF88228AFA69C00C681EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF88128AFA69C00C681EA /* AppDelegate.swift */; };
 		E8CAF88428AFA69C00C681EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF88328AFA69C00C681EA /* SceneDelegate.swift */; };
 		E8CAF88628AFA69C00C681EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF88528AFA69C00C681EA /* ViewController.swift */; };
@@ -20,6 +24,7 @@
 		E8CAF8BA28AFABAB00C681EA /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF8B928AFABAB00C681EA /* City.swift */; };
 		E8CAF8BC28AFACD700C681EA /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF8BB28AFACD700C681EA /* Url.swift */; };
 		E8CAF8BE28AFACE900C681EA /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF8BD28AFACE900C681EA /* ApiService.swift */; };
+		E8CAF8C128AFB7D700C681EA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF8C028AFB7D700C681EA /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8BCDF5D28AFBF03009DA408 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		E8BCDF5E28AFBF03009DA408 /* CityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
+		E8BCDF6228AFC0D6009DA408 /* CityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVC.swift; sourceTree = "<group>"; };
+		E8BCDF6428AFC226009DA408 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		E8CAF87E28AFA69C00C681EA /* Pharos Assigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pharos Assigment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CAF88128AFA69C00C681EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8CAF88328AFA69C00C681EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +66,7 @@
 		E8CAF8B928AFABAB00C681EA /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		E8CAF8BB28AFACD700C681EA /* Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
 		E8CAF8BD28AFACE900C681EA /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		E8CAF8C028AFB7D700C681EA /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8BCDF6128AFC0BB009DA408 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				E8CAF8C228AFBD7B00C681EA /* CityCell */,
+				E8BCDF6228AFC0D6009DA408 /* CityVC.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
 		E8CAF87528AFA69C00C681EA = {
 			isa = PBXGroup;
 			children = (
@@ -107,11 +126,11 @@
 		E8CAF88028AFA69C00C681EA /* Pharos Assigment */ = {
 			isa = PBXGroup;
 			children = (
-				E8CAF8B828AFAAB600C681EA /* Networking */,
+				E8CAF8BF28AFB77500C681EA /* Networking */,
 				E8CAF8B728AFAAA500C681EA /* Apis */,
-				E8CAF8B628AFAA8100C681EA /* ViewModel */,
-				E8CAF8B528AFAA4E00C681EA /* View */,
 				E8CAF8B428AFAA3600C681EA /* Model */,
+				E8CAF8B528AFAA4E00C681EA /* View */,
+				E8CAF8B628AFAA8100C681EA /* ViewModel */,
 				E8CAF88128AFA69C00C681EA /* AppDelegate.swift */,
 				E8CAF88328AFA69C00C681EA /* SceneDelegate.swift */,
 				E8CAF88528AFA69C00C681EA /* ViewController.swift */,
@@ -150,6 +169,7 @@
 		E8CAF8B528AFAA4E00C681EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E8BCDF6128AFC0BB009DA408 /* City */,
 				E8CAF88728AFA69C00C681EA /* Main.storyboard */,
 				E8CAF88F28AFA6A400C681EA /* LaunchScreen.storyboard */,
 			);
@@ -159,6 +179,7 @@
 		E8CAF8B628AFAA8100C681EA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E8BCDF6428AFC226009DA408 /* CityViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -172,11 +193,21 @@
 			path = Apis;
 			sourceTree = "<group>";
 		};
-		E8CAF8B828AFAAB600C681EA /* Networking */ = {
+		E8CAF8BF28AFB77500C681EA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E8CAF8C028AFB7D700C681EA /* NetworkManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		E8CAF8C228AFBD7B00C681EA /* CityCell */ = {
+			isa = PBXGroup;
+			children = (
+				E8BCDF5D28AFBF03009DA408 /* CityCell.swift */,
+				E8BCDF5E28AFBF03009DA408 /* CityCell.xib */,
+			);
+			path = CityCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +316,7 @@
 			files = (
 				E8CAF89128AFA6A400C681EA /* LaunchScreen.storyboard in Resources */,
 				E8CAF88E28AFA6A400C681EA /* Assets.xcassets in Resources */,
+				E8BCDF6028AFBF03009DA408 /* CityCell.xib in Resources */,
 				E8CAF88928AFA69C00C681EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,12 +343,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8CAF88C28AFA69C00C681EA /* Pharos_Assigment.xcdatamodeld in Sources */,
+				E8BCDF6528AFC226009DA408 /* CityViewModel.swift in Sources */,
 				E8CAF8BC28AFACD700C681EA /* Url.swift in Sources */,
 				E8CAF8BA28AFABAB00C681EA /* City.swift in Sources */,
 				E8CAF88628AFA69C00C681EA /* ViewController.swift in Sources */,
+				E8CAF8C128AFB7D700C681EA /* NetworkManager.swift in Sources */,
+				E8BCDF5F28AFBF03009DA408 /* CityCell.swift in Sources */,
 				E8CAF88228AFA69C00C681EA /* AppDelegate.swift in Sources */,
 				E8CAF8BE28AFACE900C681EA /* ApiService.swift in Sources */,
 				E8CAF88428AFA69C00C681EA /* SceneDelegate.swift in Sources */,
+				E8BCDF6328AFC0D6009DA408 /* CityVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

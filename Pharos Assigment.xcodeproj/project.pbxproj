@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8CAF88228AFA69C00C681EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF88128AFA69C00C681EA /* AppDelegate.swift */; };
+		E8CAF88428AFA69C00C681EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF88328AFA69C00C681EA /* SceneDelegate.swift */; };
+		E8CAF88628AFA69C00C681EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF88528AFA69C00C681EA /* ViewController.swift */; };
+		E8CAF88928AFA69C00C681EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CAF88728AFA69C00C681EA /* Main.storyboard */; };
+		E8CAF88C28AFA69C00C681EA /* Pharos_Assigment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF88A28AFA69C00C681EA /* Pharos_Assigment.xcdatamodeld */; };
+		E8CAF88E28AFA6A400C681EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CAF88D28AFA6A400C681EA /* Assets.xcassets */; };
+		E8CAF89128AFA6A400C681EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CAF88F28AFA6A400C681EA /* LaunchScreen.storyboard */; };
+		E8CAF89C28AFA6A500C681EA /* Pharos_AssigmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF89B28AFA6A500C681EA /* Pharos_AssigmentTests.swift */; };
+		E8CAF8A628AFA6A500C681EA /* Pharos_AssigmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF8A528AFA6A500C681EA /* Pharos_AssigmentUITests.swift */; };
+		E8CAF8A828AFA6A500C681EA /* Pharos_AssigmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF8A728AFA6A500C681EA /* Pharos_AssigmentUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8CAF89828AFA6A500C681EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8CAF87628AFA69C00C681EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8CAF87D28AFA69C00C681EA;
+			remoteInfo = "Pharos Assigment";
+		};
+		E8CAF8A228AFA6A500C681EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8CAF87628AFA69C00C681EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8CAF87D28AFA69C00C681EA;
+			remoteInfo = "Pharos Assigment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E8CAF87E28AFA69C00C681EA /* Pharos Assigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pharos Assigment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CAF88128AFA69C00C681EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8CAF88328AFA69C00C681EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8CAF88528AFA69C00C681EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8CAF88828AFA69C00C681EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8CAF88B28AFA69C00C681EA /* Pharos_Assigment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pharos_Assigment.xcdatamodel; sourceTree = "<group>"; };
+		E8CAF88D28AFA6A400C681EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8CAF89028AFA6A400C681EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8CAF89228AFA6A400C681EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8CAF89728AFA6A500C681EA /* Pharos AssigmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pharos AssigmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CAF89B28AFA6A500C681EA /* Pharos_AssigmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pharos_AssigmentTests.swift; sourceTree = "<group>"; };
+		E8CAF8A128AFA6A500C681EA /* Pharos AssigmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pharos AssigmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CAF8A528AFA6A500C681EA /* Pharos_AssigmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pharos_AssigmentUITests.swift; sourceTree = "<group>"; };
+		E8CAF8A728AFA6A500C681EA /* Pharos_AssigmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pharos_AssigmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8CAF87B28AFA69C00C681EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CAF89428AFA6A500C681EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CAF89E28AFA6A500C681EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8CAF87528AFA69C00C681EA = {
+			isa = PBXGroup;
+			children = (
+				E8CAF88028AFA69C00C681EA /* Pharos Assigment */,
+				E8CAF89A28AFA6A500C681EA /* Pharos AssigmentTests */,
+				E8CAF8A428AFA6A500C681EA /* Pharos AssigmentUITests */,
+				E8CAF87F28AFA69C00C681EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8CAF87F28AFA69C00C681EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8CAF87E28AFA69C00C681EA /* Pharos Assigment.app */,
+				E8CAF89728AFA6A500C681EA /* Pharos AssigmentTests.xctest */,
+				E8CAF8A128AFA6A500C681EA /* Pharos AssigmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8CAF88028AFA69C00C681EA /* Pharos Assigment */ = {
+			isa = PBXGroup;
+			children = (
+				E8CAF88128AFA69C00C681EA /* AppDelegate.swift */,
+				E8CAF88328AFA69C00C681EA /* SceneDelegate.swift */,
+				E8CAF88528AFA69C00C681EA /* ViewController.swift */,
+				E8CAF88728AFA69C00C681EA /* Main.storyboard */,
+				E8CAF88D28AFA6A400C681EA /* Assets.xcassets */,
+				E8CAF88F28AFA6A400C681EA /* LaunchScreen.storyboard */,
+				E8CAF89228AFA6A400C681EA /* Info.plist */,
+				E8CAF88A28AFA69C00C681EA /* Pharos_Assigment.xcdatamodeld */,
+			);
+			path = "Pharos Assigment";
+			sourceTree = "<group>";
+		};
+		E8CAF89A28AFA6A500C681EA /* Pharos AssigmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8CAF89B28AFA6A500C681EA /* Pharos_AssigmentTests.swift */,
+			);
+			path = "Pharos AssigmentTests";
+			sourceTree = "<group>";
+		};
+		E8CAF8A428AFA6A500C681EA /* Pharos AssigmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8CAF8A528AFA6A500C681EA /* Pharos_AssigmentUITests.swift */,
+				E8CAF8A728AFA6A500C681EA /* Pharos_AssigmentUITestsLaunchTests.swift */,
+			);
+			path = "Pharos AssigmentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8CAF87D28AFA69C00C681EA /* Pharos Assigment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CAF8AB28AFA6A500C681EA /* Build configuration list for PBXNativeTarget "Pharos Assigment" */;
+			buildPhases = (
+				E8CAF87A28AFA69C00C681EA /* Sources */,
+				E8CAF87B28AFA69C00C681EA /* Frameworks */,
+				E8CAF87C28AFA69C00C681EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pharos Assigment";
+			productName = "Pharos Assigment";
+			productReference = E8CAF87E28AFA69C00C681EA /* Pharos Assigment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8CAF89628AFA6A500C681EA /* Pharos AssigmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CAF8AE28AFA6A500C681EA /* Build configuration list for PBXNativeTarget "Pharos AssigmentTests" */;
+			buildPhases = (
+				E8CAF89328AFA6A500C681EA /* Sources */,
+				E8CAF89428AFA6A500C681EA /* Frameworks */,
+				E8CAF89528AFA6A500C681EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8CAF89928AFA6A500C681EA /* PBXTargetDependency */,
+			);
+			name = "Pharos AssigmentTests";
+			productName = "Pharos AssigmentTests";
+			productReference = E8CAF89728AFA6A500C681EA /* Pharos AssigmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8CAF8A028AFA6A500C681EA /* Pharos AssigmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CAF8B128AFA6A500C681EA /* Build configuration list for PBXNativeTarget "Pharos AssigmentUITests" */;
+			buildPhases = (
+				E8CAF89D28AFA6A500C681EA /* Sources */,
+				E8CAF89E28AFA6A500C681EA /* Frameworks */,
+				E8CAF89F28AFA6A500C681EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8CAF8A328AFA6A500C681EA /* PBXTargetDependency */,
+			);
+			name = "Pharos AssigmentUITests";
+			productName = "Pharos AssigmentUITests";
+			productReference = E8CAF8A128AFA6A500C681EA /* Pharos AssigmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8CAF87628AFA69C00C681EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E8CAF87D28AFA69C00C681EA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E8CAF89628AFA6A500C681EA = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E8CAF87D28AFA69C00C681EA;
+					};
+					E8CAF8A028AFA6A500C681EA = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E8CAF87D28AFA69C00C681EA;
+					};
+				};
+			};
+			buildConfigurationList = E8CAF87928AFA69C00C681EA /* Build configuration list for PBXProject "Pharos Assigment" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8CAF87528AFA69C00C681EA;
+			productRefGroup = E8CAF87F28AFA69C00C681EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8CAF87D28AFA69C00C681EA /* Pharos Assigment */,
+				E8CAF89628AFA6A500C681EA /* Pharos AssigmentTests */,
+				E8CAF8A028AFA6A500C681EA /* Pharos AssigmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8CAF87C28AFA69C00C681EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CAF89128AFA6A400C681EA /* LaunchScreen.storyboard in Resources */,
+				E8CAF88E28AFA6A400C681EA /* Assets.xcassets in Resources */,
+				E8CAF88928AFA69C00C681EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CAF89528AFA6A500C681EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CAF89F28AFA6A500C681EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8CAF87A28AFA69C00C681EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CAF88C28AFA69C00C681EA /* Pharos_Assigment.xcdatamodeld in Sources */,
+				E8CAF88628AFA69C00C681EA /* ViewController.swift in Sources */,
+				E8CAF88228AFA69C00C681EA /* AppDelegate.swift in Sources */,
+				E8CAF88428AFA69C00C681EA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CAF89328AFA6A500C681EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CAF89C28AFA6A500C681EA /* Pharos_AssigmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CAF89D28AFA6A500C681EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CAF8A628AFA6A500C681EA /* Pharos_AssigmentUITests.swift in Sources */,
+				E8CAF8A828AFA6A500C681EA /* Pharos_AssigmentUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8CAF89928AFA6A500C681EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8CAF87D28AFA69C00C681EA /* Pharos Assigment */;
+			targetProxy = E8CAF89828AFA6A500C681EA /* PBXContainerItemProxy */;
+		};
+		E8CAF8A328AFA6A500C681EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8CAF87D28AFA69C00C681EA /* Pharos Assigment */;
+			targetProxy = E8CAF8A228AFA6A500C681EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8CAF88728AFA69C00C681EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8CAF88828AFA69C00C681EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8CAF88F28AFA6A400C681EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8CAF89028AFA6A400C681EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8CAF8A928AFA6A500C681EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8CAF8AA28AFA6A500C681EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8CAF8AC28AFA6A500C681EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pharos Assigment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kazzaz.Pharos-Assigment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8CAF8AD28AFA6A500C681EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pharos Assigment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kazzaz.Pharos-Assigment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8CAF8AF28AFA6A500C681EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kazzaz.Pharos-AssigmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pharos Assigment.app/Pharos Assigment";
+			};
+			name = Debug;
+		};
+		E8CAF8B028AFA6A500C681EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kazzaz.Pharos-AssigmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pharos Assigment.app/Pharos Assigment";
+			};
+			name = Release;
+		};
+		E8CAF8B228AFA6A500C681EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kazzaz.Pharos-AssigmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pharos Assigment";
+			};
+			name = Debug;
+		};
+		E8CAF8B328AFA6A500C681EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kazzaz.Pharos-AssigmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pharos Assigment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8CAF87928AFA69C00C681EA /* Build configuration list for PBXProject "Pharos Assigment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CAF8A928AFA6A500C681EA /* Debug */,
+				E8CAF8AA28AFA6A500C681EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CAF8AB28AFA6A500C681EA /* Build configuration list for PBXNativeTarget "Pharos Assigment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CAF8AC28AFA6A500C681EA /* Debug */,
+				E8CAF8AD28AFA6A500C681EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CAF8AE28AFA6A500C681EA /* Build configuration list for PBXNativeTarget "Pharos AssigmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CAF8AF28AFA6A500C681EA /* Debug */,
+				E8CAF8B028AFA6A500C681EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CAF8B128AFA6A500C681EA /* Build configuration list for PBXNativeTarget "Pharos AssigmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CAF8B228AFA6A500C681EA /* Debug */,
+				E8CAF8B328AFA6A500C681EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E8CAF88A28AFA69C00C681EA /* Pharos_Assigment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E8CAF88B28AFA69C00C681EA /* Pharos_Assigment.xcdatamodel */,
+			);
+			currentVersion = E8CAF88B28AFA69C00C681EA /* Pharos_Assigment.xcdatamodel */;
+			path = Pharos_Assigment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E8CAF87628AFA69C00C681EA /* Project object */;
+}

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 class NetworkManager: ApiService{
     func fetchCities(endPoint: Int, completion: @escaping (([City]?, Error?) -> Void)) {
@@ -25,5 +25,8 @@ class NetworkManager: ApiService{
         }
     }
     
+    func downloadImage(url: String, completion: @escaping ((UIImage?, Error?) -> Void)) {
+        completion(nil,nil)
+    }
     
 }

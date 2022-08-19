@@ -9,10 +9,16 @@ import Foundation
 
 
 class CityViewModel {
-
-    var city: [City]? {
+    var searchedText = ""
+    var city: [City] = [] {
         didSet {
-            bindingData(city,nil)
+            filterdCities = city
+            search(with: searchedText)
+        }
+    }
+    var filterdCities: [City] = [] {
+        didSet {
+            bindingData(filterdCities,nil)
         }
     }
     var error: Error? {
@@ -25,11 +31,21 @@ class CityViewModel {
     init(apiService: ApiService = NetworkManager()) {
         self.apiService = apiService
     }
-    func fetchCities() {
-        apiService.fetchCities(endPoint:1) { cities, error in
+    
+    func viewIsloaded() {
+        fetchCities(pageNumber: 1)
+    }
+    
+    func checkIfNeedToFetchNewPage() {
+        let pageNumber = self.city.count / 50 + 1
+        fetchCities(pageNumber: pageNumber)
+    }
+    
+    private func fetchCities(pageNumber: Int){
+        apiService.fetchCities(endPoint: pageNumber) { cities, error in
             if let cities = cities {
-                self.city = cities
-                
+                // add to core data
+                self.city.append(contentsOf: cities)
                 print(self.city)
             }
             if let error = error {
@@ -37,13 +53,23 @@ class CityViewModel {
             }
         }
     }
+    func search(with: String) {
+        if with.isEmpty {
+            filterdCities = city
+            return
+        }
+        searchedText = with
+        self.filterdCities = self.city.filter { itemCity in
+            return itemCity.name?.contains(with) ?? false
+        }
+    }
     
     func getCities() -> [City]?{
-        return city
+        return filterdCities
         print(city)
     }
     
     func getCity(indexPath: IndexPath) -> City?{
-        return city?[indexPath.row]
+        return filterdCities[indexPath.row]
     }
 }

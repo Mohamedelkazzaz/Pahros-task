@@ -11,7 +11,7 @@ class CityVC: UIViewController {
 
     @IBOutlet weak var cityTableView: UITableView!
     
-    var viewModel: CityViewModel!
+    var viewModel: CityViewModel! = CityViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +20,7 @@ class CityVC: UIViewController {
         
         cityTableView.register(UINib(nibName: "CityCell", bundle: nil), forCellReuseIdentifier: "cell")
         
-        viewModel.fetchCities()
+        viewModel.viewIsloaded()
         viewModel.bindingData = { city, error in
             DispatchQueue.main.async {
                 self.cityTableView.reloadData()
@@ -31,6 +31,10 @@ class CityVC: UIViewController {
         }
     }
     }
+    
+    private func setupView() {
+        
+    }
 
 }
 
@@ -40,12 +44,20 @@ extension CityVC: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!
+        let cell = cityTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!
         CityCell
         cell.setup(city: viewModel.getCity(indexPath: indexPath))
         cell.selectionStyle = .none
+        if viewModel.getCities()?.count ?? 0 == indexPath.row + 1 {
+            viewModel.checkIfNeedToFetchNewPage() 
+        }
+        
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let stoaryBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = stoaryBoard.instantiateViewController(withIdentifier: "MapVC") as! MapVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

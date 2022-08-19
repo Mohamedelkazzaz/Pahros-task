@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="80.357142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--MapVC-->
         <scene sceneID="wCH-cG-81u">
             <objects>
-                <viewController id="z62-vj-qRC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapVC" id="z62-vj-qRC" customClass="MapVC" customModule="Pharos_Assigment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uv6-LB-Hcc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,6 +60,9 @@
                             <constraint firstItem="I5u-u3-5Ta" firstAttribute="trailing" secondItem="enP-ak-lQd" secondAttribute="trailing" id="bud-z1-Ahf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLocationMap" destination="enP-ak-lQd" id="WSb-ud-wOh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MB2-Dw-yie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

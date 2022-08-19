@@ -9,6 +9,7 @@ import UIKit
 
 class CityCell: UITableViewCell {
     @IBOutlet weak var cityNameLabel: UILabel!
+    @IBOutlet weak var cityImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +24,15 @@ class CityCell: UITableViewCell {
     
     func setup(city: City?){
         cityNameLabel.text = city?.name
-
+        let imageLink = Url().googleMapApi(lat: city?.coordinate.lat ?? "", long: city?.coordinate.lon ?? "")
+        NetworkManager().downloadImage(url: imageLink) { downloadedImage, error in
+            guard let _ = error else {
+                //&ot Ay sora
+                self.cityImage.image = UIImage(systemName: "error")
+                return
+            }
+            self.cityImage.image = downloadedImage
+        }
     }
     
 }

@@ -8,9 +8,9 @@
 import Foundation
 
 struct City: Codable{
-    var country: String
-    var name: String
-    var id: String
+    var country: String?
+    var name: String?
+    var id: String?
     var coordinate: Coordinate
     
     enum CodingKeys: String, CodingKey{
@@ -21,6 +21,6 @@ struct City: Codable{
 }
 
 struct Coordinate: Codable {
-    var lat: String
-    var lon: String
+    var lat: String?
+    var lon: String?
 }

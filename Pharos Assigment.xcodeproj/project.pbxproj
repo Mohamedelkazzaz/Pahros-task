@@ -17,6 +17,9 @@
 		E8CAF89C28AFA6A500C681EA /* Pharos_AssigmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF89B28AFA6A500C681EA /* Pharos_AssigmentTests.swift */; };
 		E8CAF8A628AFA6A500C681EA /* Pharos_AssigmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF8A528AFA6A500C681EA /* Pharos_AssigmentUITests.swift */; };
 		E8CAF8A828AFA6A500C681EA /* Pharos_AssigmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF8A728AFA6A500C681EA /* Pharos_AssigmentUITestsLaunchTests.swift */; };
+		E8CAF8BA28AFABAB00C681EA /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF8B928AFABAB00C681EA /* City.swift */; };
+		E8CAF8BC28AFACD700C681EA /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF8BB28AFACD700C681EA /* Url.swift */; };
+		E8CAF8BE28AFACE900C681EA /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF8BD28AFACE900C681EA /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		E8CAF8A128AFA6A500C681EA /* Pharos AssigmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pharos AssigmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CAF8A528AFA6A500C681EA /* Pharos_AssigmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pharos_AssigmentUITests.swift; sourceTree = "<group>"; };
 		E8CAF8A728AFA6A500C681EA /* Pharos_AssigmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pharos_AssigmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8CAF8B928AFABAB00C681EA /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		E8CAF8BB28AFACD700C681EA /* Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
+		E8CAF8BD28AFACE900C681EA /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +107,15 @@
 		E8CAF88028AFA69C00C681EA /* Pharos Assigment */ = {
 			isa = PBXGroup;
 			children = (
+				E8CAF8B828AFAAB600C681EA /* Networking */,
+				E8CAF8B728AFAAA500C681EA /* Apis */,
+				E8CAF8B628AFAA8100C681EA /* ViewModel */,
+				E8CAF8B528AFAA4E00C681EA /* View */,
+				E8CAF8B428AFAA3600C681EA /* Model */,
 				E8CAF88128AFA69C00C681EA /* AppDelegate.swift */,
 				E8CAF88328AFA69C00C681EA /* SceneDelegate.swift */,
 				E8CAF88528AFA69C00C681EA /* ViewController.swift */,
-				E8CAF88728AFA69C00C681EA /* Main.storyboard */,
 				E8CAF88D28AFA6A400C681EA /* Assets.xcassets */,
-				E8CAF88F28AFA6A400C681EA /* LaunchScreen.storyboard */,
 				E8CAF89228AFA6A400C681EA /* Info.plist */,
 				E8CAF88A28AFA69C00C681EA /* Pharos_Assigment.xcdatamodeld */,
 			);
@@ -128,6 +137,46 @@
 				E8CAF8A728AFA6A500C681EA /* Pharos_AssigmentUITestsLaunchTests.swift */,
 			);
 			path = "Pharos AssigmentUITests";
+			sourceTree = "<group>";
+		};
+		E8CAF8B428AFAA3600C681EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8CAF8B928AFABAB00C681EA /* City.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8CAF8B528AFAA4E00C681EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8CAF88728AFA69C00C681EA /* Main.storyboard */,
+				E8CAF88F28AFA6A400C681EA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8CAF8B628AFAA8100C681EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E8CAF8B728AFAAA500C681EA /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				E8CAF8BB28AFACD700C681EA /* Url.swift */,
+				E8CAF8BD28AFACE900C681EA /* ApiService.swift */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
+		E8CAF8B828AFAAB600C681EA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8CAF88C28AFA69C00C681EA /* Pharos_Assigment.xcdatamodeld in Sources */,
+				E8CAF8BC28AFACD700C681EA /* Url.swift in Sources */,
+				E8CAF8BA28AFABAB00C681EA /* City.swift in Sources */,
 				E8CAF88628AFA69C00C681EA /* ViewController.swift in Sources */,
 				E8CAF88228AFA69C00C681EA /* AppDelegate.swift in Sources */,
+				E8CAF8BE28AFACE900C681EA /* ApiService.swift in Sources */,
 				E8CAF88428AFA69C00C681EA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

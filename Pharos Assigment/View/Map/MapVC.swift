@@ -91,23 +91,4 @@ private extension MKMapView {
 }
 
 
-//        let lat = Double(coordinate?.lat ?? "") ?? 0.0
-//        let long = Double(coordinate?.lon ?? "") ?? 0.0
-//        let initialLocation = CLLocation(latitude: lat, longitude: long)
-//        cityLocationMap.centerToLocation(initialLocation)
-//        let lat = Double(coordinate?.lat ?? "") ?? 0.0
-//        let long = Double(coordinate?.lon ?? "") ?? 0.0
-//        let oahuCenter = CLLocation(latitude: lat, longitude: long)
-//        print(lat)
-//        print(long)
-//        print(oahuCenter)
-//        let region = MKCoordinateRegion(
-//            center: oahuCenter.coordinate,
-//            latitudinalMeters: 5000,
-//            longitudinalMeters: 6000)
-//        cityLocationMap.setCameraBoundary(
-//            MKMapView.CameraBoundary(coordinateRegion: region),
-//            animated: true)
-//
-//        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 200000)
-//        cityLocationMap.setCameraZoomRange(zoomRange, animated: true)
+

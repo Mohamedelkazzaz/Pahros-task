@@ -39,6 +39,9 @@ class CityViewModel {
     }
     
     func checkIfNeedToFetchNewPage() {
+        guard searchedText.isEmpty else{
+            return
+        }
         let pageNumber = self.city.count / 50 + 1
         fetchCities(pageNumber: pageNumber)
     }
@@ -58,11 +61,12 @@ class CityViewModel {
         }
     }
     func search(with: String) {
+        searchedText = with
         if with.isEmpty {
             filterdCities = city
             return
         }
-        searchedText = with
+       
         self.filterdCities = self.city.filter { itemCity in
             return itemCity.name?.contains(with) ?? false
         }

@@ -26,15 +26,7 @@ class CityCell: UITableViewCell {
         cityNameLabel.text = city?.name
         let imageLink = Url().googleMapApi(lat: city?.coordinate.lat ?? "", long: city?.coordinate.lon ?? "")
         cityImage.downloaded(from: imageLink)
-//        let imageLink = Url().googleMapApi(lat: city?.coordinate.lat ?? "", long: city?.coordinate.lon ?? "")
-//        NetworkManager().downloadImage(url: imageLink) { downloadedImage, error in
-//            guard let _ = error else {
-//                //&ot Ay sora
-//                self.cityImage.image = UIImage(systemName: "error")
-//                return
-//            }
-//            self.cityImage.image = downloadedImage
-//        }
+
     }
     
 }

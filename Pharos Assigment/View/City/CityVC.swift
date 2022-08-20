@@ -49,6 +49,15 @@ class CityVC: UIViewController {
 
 extension CityVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if viewModel.getCities()?.isEmpty ?? false {
+            cityTableView.isHidden = true
+            cityView.isHidden = false
+            notFoundImage.isHidden = false
+        }else{
+            cityTableView.isHidden = false
+            cityView.isHidden = true
+            notFoundImage.isHidden = true
+        }
         return viewModel.getCities()?.count ?? 0
     }
     
@@ -80,17 +89,9 @@ extension CityVC: UITableViewDelegate,UITableViewDataSource{
 
 extension CityVC: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if viewModel.getCities()?.isEmpty ?? false {
-            cityTableView.isHidden = true
-            cityView.isHidden = false
-            notFoundImage.isHidden = false
-        }else{
-            cityTableView.isHidden = false
-            cityView.isHidden = true
-            notFoundImage.isHidden = true
-        }
-        viewModel.search(with: searchText)
         
-        cityTableView.reloadData()
+        viewModel.search(with: searchText)
+       
+        
     }
 }

@@ -26,29 +26,5 @@ class NetworkManager: ApiService{
         }
     }
     
-//    func getData(from url: String, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-//        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-//    }
-    
-//    func downloadImage(url: String, completion: @escaping ((UIImage?, Error?) -> Void)) {
-//        completion(nil,nil)
-//    }
-    
-//    func downloadImage(from url: URL) {
-//            URLSession.shared.dataTask(with: url) { data, response, error in
-//                guard
-//                    let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-//                    let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-//                    let data = data, error == nil,
-//                    let image = UIImage(data: data)
-//                    else { return }
-//                DispatchQueue.main.async() { [weak self] in
-//                    self?.image = image
-//                }
-//            }.resume()
-//        }
-//    func downloadImage(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-//        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-//    }
-    
+
 }

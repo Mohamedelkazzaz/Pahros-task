@@ -22,17 +22,17 @@ class CityCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setup(city: City?){
+    func setup(city: Cities?){
         cityNameLabel.text = city?.name
-        let imageLink = Url().googleMapApi(lat: city?.coordinate.lat ?? "", long: city?.coordinate.lon ?? "")
-        NetworkManager().downloadImage(url: imageLink) { downloadedImage, error in
-            guard let _ = error else {
-                //&ot Ay sora
-                self.cityImage.image = UIImage(systemName: "error")
-                return
-            }
-            self.cityImage.image = downloadedImage
-        }
+//        let imageLink = Url().googleMapApi(lat: city?.coordinate.lat ?? "", long: city?.coordinate.lon ?? "")
+//        NetworkManager().downloadImage(url: imageLink) { downloadedImage, error in
+//            guard let _ = error else {
+//                //&ot Ay sora
+//                self.cityImage.image = UIImage(systemName: "error")
+//                return
+//            }
+//            self.cityImage.image = downloadedImage
+//        }
     }
     
 }

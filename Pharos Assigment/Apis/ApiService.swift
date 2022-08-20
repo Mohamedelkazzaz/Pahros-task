@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 protocol ApiService{
-    func fetchCities(endPoint: Int, completion: @escaping (([City]?, Error?) -> Void))
-    func downloadImage(url: String, completion: @escaping ((UIImage?, Error?) -> Void))
+    func fetchCities(endPoint: Int, completion: @escaping (([Cities]?, Error?) -> Void))
+//    func downloadImage(url: String, completion: @escaping ((UIImage?, Error?) -> Void))
+//    getData(from url: String, completion: @escaping (Data?, URLResponse?, Error?) -> ())
 }

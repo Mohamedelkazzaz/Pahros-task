@@ -17,22 +17,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fKT-oq-hUd">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="139" width="414" height="723"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TlQ-AX-apy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fKT-oq-hUd" secondAttribute="trailing" id="8lh-1W-Jbw"/>
-                            <constraint firstItem="fKT-oq-hUd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RrQ-ZI-Xh7"/>
+                            <constraint firstItem="TlQ-AX-apy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QwD-Yq-l2u"/>
                             <constraint firstItem="fKT-oq-hUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SDs-JV-o96"/>
+                            <constraint firstItem="TlQ-AX-apy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cXO-J9-WJX"/>
+                            <constraint firstItem="fKT-oq-hUd" firstAttribute="top" secondItem="TlQ-AX-apy" secondAttribute="bottom" id="ceM-EY-dHS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fKT-oq-hUd" secondAttribute="bottom" id="g9A-64-ER5"/>
+                            <constraint firstItem="TlQ-AX-apy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tvb-LT-klM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="City" id="JTz-jc-Y2r"/>
                     <connections>
                         <outlet property="cityTableView" destination="fKT-oq-hUd" id="fuJ-ut-wCe"/>
+                        <outlet property="fiterCitySearch" destination="TlQ-AX-apy" id="9PE-P6-vo8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

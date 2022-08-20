@@ -12,6 +12,7 @@
 		E8BCDF6328AFC0D6009DA408 /* CityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCDF6228AFC0D6009DA408 /* CityVC.swift */; };
 		E8BCDF6528AFC226009DA408 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCDF6428AFC226009DA408 /* CityViewModel.swift */; };
 		E8BCDF6828AFD1C6009DA408 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCDF6728AFD1C6009DA408 /* MapVC.swift */; };
+		E8BCDF6A28B032C7009DA408 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCDF6928B032C7009DA408 /* DBManager.swift */; };
 		E8CAF88228AFA69C00C681EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF88128AFA69C00C681EA /* AppDelegate.swift */; };
 		E8CAF88428AFA69C00C681EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF88328AFA69C00C681EA /* SceneDelegate.swift */; };
 		E8CAF88628AFA69C00C681EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAF88528AFA69C00C681EA /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		E8BCDF6228AFC0D6009DA408 /* CityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVC.swift; sourceTree = "<group>"; };
 		E8BCDF6428AFC226009DA408 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		E8BCDF6728AFD1C6009DA408 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		E8BCDF6928B032C7009DA408 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		E8CAF87E28AFA69C00C681EA /* Pharos Assigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pharos Assigment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CAF88128AFA69C00C681EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8CAF88328AFA69C00C681EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				E8CAF88D28AFA6A400C681EA /* Assets.xcassets */,
 				E8CAF89228AFA6A400C681EA /* Info.plist */,
 				E8CAF88A28AFA69C00C681EA /* Pharos_Assigment.xcdatamodeld */,
+				E8BCDF6928B032C7009DA408 /* DBManager.swift */,
 			);
 			path = "Pharos Assigment";
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				E8CAF88C28AFA69C00C681EA /* Pharos_Assigment.xcdatamodeld in Sources */,
 				E8BCDF6828AFD1C6009DA408 /* MapVC.swift in Sources */,
 				E8BCDF6528AFC226009DA408 /* CityViewModel.swift in Sources */,
+				E8BCDF6A28B032C7009DA408 /* DBManager.swift in Sources */,
 				E8CAF8BC28AFACD700C681EA /* Url.swift in Sources */,
 				E8CAF8BA28AFABAB00C681EA /* City.swift in Sources */,
 				E8CAF88628AFA69C00C681EA /* ViewController.swift in Sources */,

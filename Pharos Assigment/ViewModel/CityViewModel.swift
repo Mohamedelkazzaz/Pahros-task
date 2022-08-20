@@ -6,17 +6,19 @@
 //
 
 import Foundation
-
+import UIKit
 
 class CityViewModel {
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var searchedText = ""
-    var city: [City] = [] {
+    var cityModel: Cities?
+    var city: [Cities] = [] {
         didSet {
             filterdCities = city
             search(with: searchedText)
         }
     }
-    var filterdCities: [City] = [] {
+    var filterdCities: [Cities] = [] {
         didSet {
             bindingData(filterdCities,nil)
         }
@@ -27,7 +29,7 @@ class CityViewModel {
         }
     }
     let apiService: ApiService
-    var bindingData: (([City]?,Error?) -> Void) = {_, _ in }
+    var bindingData: (([Cities]?,Error?) -> Void) = {_, _ in }
     init(apiService: ApiService = NetworkManager()) {
         self.apiService = apiService
     }
@@ -45,6 +47,8 @@ class CityViewModel {
         apiService.fetchCities(endPoint: pageNumber) { cities, error in
             if let cities = cities {
                 // add to core data
+                
+                DBManager.sharedInstanse.addCities(appDelegate: self.appDelegate, country: self.cityModel?.country ?? "", name: self.cityModel?.name ?? "", id: self.cityModel?.id ?? "", lat: self.cityModel?.coordinate.lat ?? "", lon: self.cityModel?.coordinate.lon ?? "")
                 self.city.append(contentsOf: cities)
                 print(self.city)
             }
@@ -64,12 +68,12 @@ class CityViewModel {
         }
     }
     
-    func getCities() -> [City]?{
+    func getCities() -> [Cities]?{
         return filterdCities
         print(city)
     }
     
-    func getCity(indexPath: IndexPath) -> City?{
+    func getCity(indexPath: IndexPath) -> Cities?{
         return filterdCities[indexPath.row]
     }
 }

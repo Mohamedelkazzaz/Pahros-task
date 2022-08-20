@@ -47,7 +47,7 @@ class CityViewModel {
     }
     
     private func fetchCities(pageNumber: Int){
-        apiService.fetchCities(endPoint: pageNumber) { cities, error in
+        apiService.fetchCities(pageNumber: pageNumber) { cities, error in
             if let cities = cities {
                 // add to core data
                 

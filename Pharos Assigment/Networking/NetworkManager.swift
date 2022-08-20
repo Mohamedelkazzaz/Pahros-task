@@ -10,8 +10,8 @@ import UIKit
 
 class NetworkManager: ApiService{
     
-    func fetchCities(endPoint: Int, completion: @escaping (([Cities]?, Error?) -> Void)) {
-        if let url = URL(string: Url(endPoint: endPoint).url){
+    func fetchCities(pageNumber: Int, completion: @escaping (([Cities]?, Error?) -> Void)) {
+        if let url = URL(string: Url(pageNumber: pageNumber).url){
             URLSession.shared.dataTask(with: url) { data, response, error in
                 if let data = data {
                     guard let decodedData = try? JSONDecoder().decode([Cities].self, from: data) else{ return}

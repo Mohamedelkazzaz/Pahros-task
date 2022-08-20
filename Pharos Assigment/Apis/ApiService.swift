@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 protocol ApiService{
-    func fetchCities(endPoint: Int, completion: @escaping (([Cities]?, Error?) -> Void))
+    func fetchCities(pageNumber: Int, completion: @escaping (([Cities]?, Error?) -> Void))
 }

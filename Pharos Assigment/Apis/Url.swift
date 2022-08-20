@@ -8,9 +8,9 @@
 import Foundation
 
 struct Url {
-    var endPoint = Int()
+    var pageNumber = Int()
     var url: String {
-        return "http://assignment.pharos-solutions.de/cities.json?page=\(endPoint)"
+        return "http://assignment.pharos-solutions.de/cities.json?page=\(pageNumber)"
     }
     
     func googleMapApi(lat: String, long: String) -> String {

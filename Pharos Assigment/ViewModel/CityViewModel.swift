@@ -74,6 +74,9 @@ class CityViewModel {
     }
     
     func getCity(indexPath: IndexPath) -> Cities?{
+        guard indexPath.row < filterdCities.count else{
+            return nil
+        }
         return filterdCities[indexPath.row]
     }
 }

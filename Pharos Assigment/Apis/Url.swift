@@ -15,7 +15,9 @@ struct Url {
     
     func googleMapApi(lat: String, long: String) -> String {
         let apiKey = "AIzaSyA-p-uarBSvUJTN1askw3t9o7EZjqzIZyk"
-        let mapLink = "https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=600x300&maptype=roadmap&markers=color:red:\(lat),\(long)&key=\(apiKey)"
+        let mapLink = "https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=100x60&maptype=roadmap&markers=color:red:\(lat),\(long)&key=\(apiKey)"
         return mapLink
     }
 }
+
+//https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=100x60&maptype=roadmap&markers=color:red:29,76&key=AIzaSyA-p-uarBSvUJTN1askw3t9o7EZjqzIZyk

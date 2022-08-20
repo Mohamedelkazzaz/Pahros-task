@@ -11,11 +11,15 @@ class CityVC: UIViewController {
 
     @IBOutlet weak var fiterCitySearch: UISearchBar!
     @IBOutlet weak var cityTableView: UITableView!
+    @IBOutlet weak var notFoundImage: UIImageView!
     
     var viewModel: CityViewModel! = CityViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        notFoundImage.isHidden = true
+        cityTableView.isEditing = false
+        
         cityTableView.delegate = self
         cityTableView.dataSource = self
         
@@ -58,24 +62,29 @@ extension CityVC: UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
         let stoaryBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = stoaryBoard.instantiateViewController(withIdentifier: "MapVC") as! MapVC
+        vc.latitude = viewModel.getCity(indexPath: indexPath)?.coordinate.lat ?? ""
+        vc.longtuide = viewModel.getCity(indexPath: indexPath)?.coordinate.lon ?? ""
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
     }
     
 }
 
 extension CityVC: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        // When there is no text, filteredData is the same as the original data
-        // When user has entered text into the search box
-        // Use the filter method to iterate over all items in the data array
-        // For each item, return true if the item should be included and false if the
-        // item should NOT be included
-//        filteredData = searchText.isEmpty ? data : data.filter { (item: String) -> Bool in
-//            // If dataItem matches the searchText, return true to include it
-//            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
-//        }
+        if viewModel.getCities()?.isEmpty ?? false {
+            cityTableView.isHidden = true
+            notFoundImage.isHidden = false
+        }else{
+            cityTableView.isHidden = false
+            notFoundImage.isHidden = true
+        }
         viewModel.search(with: searchText)
         
         cityTableView.reloadData()

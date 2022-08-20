@@ -9,6 +9,7 @@ import UIKit
 
 class CityVC: UIViewController {
 
+    @IBOutlet weak var cityView: UIView!
     @IBOutlet weak var fiterCitySearch: UISearchBar!
     @IBOutlet weak var cityTableView: UITableView!
     @IBOutlet weak var notFoundImage: UIImageView!
@@ -16,9 +17,10 @@ class CityVC: UIViewController {
     var viewModel: CityViewModel! = CityViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        cityView.isHidden = true
         notFoundImage.isHidden = true
         cityTableView.isEditing = false
+        
         
         cityTableView.delegate = self
         cityTableView.dataSource = self
@@ -71,7 +73,7 @@ extension CityVC: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 120
     }
     
 }
@@ -80,9 +82,11 @@ extension CityVC: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if viewModel.getCities()?.isEmpty ?? false {
             cityTableView.isHidden = true
+            cityView.isHidden = false
             notFoundImage.isHidden = false
         }else{
             cityTableView.isHidden = false
+            cityView.isHidden = true
             notFoundImage.isHidden = true
         }
         viewModel.search(with: searchText)

@@ -66,6 +66,7 @@
                     <navigationItem key="navigationItem" title="City" id="JTz-jc-Y2r"/>
                     <connections>
                         <outlet property="cityTableView" destination="fKT-oq-hUd" id="fuJ-ut-wCe"/>
+                        <outlet property="cityView" destination="r1H-AF-Kss" id="hQq-F8-STC"/>
                         <outlet property="fiterCitySearch" destination="TlQ-AX-apy" id="9PE-P6-vo8"/>
                         <outlet property="notFoundImage" destination="p42-ab-xRl" id="Ova-OO-lhR"/>
                     </connections>

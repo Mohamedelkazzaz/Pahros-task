@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8AC975B28B2448F006835C0 /* NetworkingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AC975A28B2448F006835C0 /* NetworkingMock.swift */; };
+		E8AC975D28B24A62006835C0 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AC975C28B24A62006835C0 /* NetworkTest.swift */; };
 		E8BCDF5F28AFBF03009DA408 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCDF5D28AFBF03009DA408 /* CityCell.swift */; };
 		E8BCDF6028AFBF03009DA408 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8BCDF5E28AFBF03009DA408 /* CityCell.xib */; };
 		E8BCDF6328AFC0D6009DA408 /* CityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCDF6228AFC0D6009DA408 /* CityVC.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8AC975A28B2448F006835C0 /* NetworkingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingMock.swift; sourceTree = "<group>"; };
+		E8AC975C28B24A62006835C0 /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
 		E8BCDF5D28AFBF03009DA408 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		E8BCDF5E28AFBF03009DA408 /* CityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
 		E8BCDF6228AFC0D6009DA408 /* CityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVC.swift; sourceTree = "<group>"; };
@@ -100,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8AC975928B24420006835C0 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				E8AC975A28B2448F006835C0 /* NetworkingMock.swift */,
+				E8AC975C28B24A62006835C0 /* NetworkTest.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		E8BCDF6128AFC0BB009DA408 /* City */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +181,7 @@
 		E8CAF89A28AFA6A500C681EA /* Pharos AssigmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				E8AC975928B24420006835C0 /* Mock */,
 				E8CAF89B28AFA6A500C681EA /* Pharos_AssigmentTests.swift */,
 			);
 			path = "Pharos AssigmentTests";
@@ -389,6 +403,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8CAF89C28AFA6A500C681EA /* Pharos_AssigmentTests.swift in Sources */,
+				E8AC975D28B24A62006835C0 /* NetworkTest.swift in Sources */,
+				E8AC975B28B2448F006835C0 /* NetworkingMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
